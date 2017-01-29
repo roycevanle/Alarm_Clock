@@ -6,7 +6,8 @@ if (annyang) {
   var commands = {
     'testing': function() {
       // $('#tpsreport').animate({bottom: '-100px'});
-      alert("testing");
+      document.getElementById("hiddenMessage").style.display = 'block';
+      //alert("testing");
     },
     // annyang will capture anything after a splat (*) and pass it to the function.
     // e.g. saying "Show me Batman and Robin" is the same as calling showFlickr('Batman and Robin');
@@ -18,7 +19,9 @@ if (annyang) {
 
     // By defining a part of the following command as optional, annyang will respond to both:
     // "say hello to my little friend" as well as "say hello friend"
-    'say hello (to my little) friend': greeting
+    'say hello (to my little) friend': greeting,
+
+    'test': test
   };
 
   var showFlickr = function(tag) {
@@ -31,6 +34,10 @@ if (annyang) {
   }
 
   var greeting = function() {
+    document.getElementById("hiddenMessage").style.display = 'block';
+  }
+
+  var test = function() {
     document.getElementById("hiddenMessage").style.display = 'block';
   }
 
