@@ -1,8 +1,9 @@
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
-    'show tps report': function() {
-      $('#tpsreport').animate({bottom: '-100px'});
+    'testing': function() {
+      // $('#tpsreport').animate({bottom: '-100px'});
+      alert("testing");
     },
     // annyang will capture anything after a splat (*) and pass it to the function.
     // e.g. saying "Show me Batman and Robin" is the same as calling showFlickr('Batman and Robin');
@@ -36,8 +37,3 @@ if (annyang) {
   // Start listening. You can call this here, or attach this call to an event, button, etc.
   annyang.start();
 }
-
-setInterval(function() {
-  var d = new Date();
-  document.getElementById("time").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-}, 1000);
