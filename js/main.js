@@ -1,3 +1,6 @@
+function revealMessage() {
+  document.getElementById("hiddenMessage").style.display = 'block';
+}
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
@@ -28,7 +31,7 @@ if (annyang) {
   }
 
   var greeting = function() {
-    $('#greeting').text('Hello!');
+    document.getElementById("hiddenMessage").style.display = 'block';
   }
 
   // Add our commands to annyang

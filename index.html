@@ -36,6 +36,9 @@
 	</div>
 	<div id="time"></div>
 
+	<button onclick="revealMessage()">Click Me</button>
+	<p id="hiddenMessage" style="display:none">You win!</p>
+
 	<script>
 		var d = new Date();
 		document.getElementById("time").innerHTML = "<h1>" + d.getHours() + ":" + d.getMinutes() + "</h1>";
@@ -45,6 +48,6 @@
 		}, 60000);
 	</script>
 </body>
-<script src="/js/main.js"></script>
-<script src="/js/annyang.min.js"></script>
+<script src="../Alarm_Clock/js/main.js"></script>
+<script src="../Alarm_Clock/js/annyang.min.js"></script>
 </html>
