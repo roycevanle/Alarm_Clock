@@ -34,6 +34,16 @@
 		  
 		  <div class="handle"></div>
 	</div>
+	<div id="time"></div>
+
+	<script>
+		var d = new Date();
+		document.getElementById("time").innerHTML = "<h1>" + d.getHours() + ":" + d.getMinutes() + "</h1>";
+		setInterval(function() {
+		  var d = new Date();
+		  document.getElementById("time").innerHTML = "<h1>" + d.getHours() + ":" + d.getMinutes() + "</h1>";
+		}, 60000);
+	</script>
 </body>
 <script src="/js/main.js"></script>
 <script src="/js/annyang.min.js"></script>

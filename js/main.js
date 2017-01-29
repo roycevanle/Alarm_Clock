@@ -36,3 +36,8 @@ if (annyang) {
   // Start listening. You can call this here, or attach this call to an event, button, etc.
   annyang.start();
 }
+
+setInterval(function() {
+  var d = new Date();
+  document.getElementById("time").innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+}, 1000);

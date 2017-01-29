@@ -2,6 +2,10 @@ body {
   background: #8fd5d5;
 }
 
+div#time h1{
+  margin:auto;
+}
+
 .contain-clock {
   position: relative;
   margin: -75px auto;
