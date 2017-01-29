@@ -41,7 +41,12 @@
 
 	<script>
 		var d = new Date();
-		document.getElementById("time").innerHTML = "<h1>" + d.getHours() + ":" + d.getMinutes() + "</h1>";
+		var minutes = d.getMinutes();
+		var newMinutes = "";
+		if (minutes < 10){
+			minutes = "0" + minutes;
+		}
+		document.getElementById("time").innerHTML = "<h1>" + d.getHours() + ":" + minutes + "</h1>";
 		setInterval(function() {
 		  var d = new Date();
 		  document.getElementById("time").innerHTML = "<h1>" + d.getHours() + ":" + d.getMinutes() + "</h1>";
@@ -54,4 +59,5 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/annyang.min.js"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 </html>

@@ -11,21 +11,40 @@ if (annyang) {
     }};
 
   var commands2 = {
-    'love me': function() {
+    'love you': function() {
       alert("Senpai Noticed You");
-    }};
+    },
+    'what is the time': function() {
+      alert("Time is ");
+    }
+  };
 
   var commands2 = {
-    'love': function() {
-      alert("Senpai Noticed You");
+    'love me': function() {
+      responsiveVoice.speak("Senpai Noticed You");
     }, 
     'set alarm for 1800': function() {
       alert("Your alarm for 18:00 was set");
     },
     'set alarm for *time': function(time) {
       alert("Alarm set for " + time);
+    },
+    'the ischool is my school': function() {
+      responsiveVoice.speak("The iSchool is our school! Whoooooohooooooo");
+    },
+    'what is the time': function() {
+      var d = new Date();
+      responsiveVoice.speak("Time is " + d.getHours() + ":" + d.getMinutes());
+    },
+    'My name is Ned': function() {
+      responsiveVoice.speak("Fuck your shit Ned");
+    },
+    'My name is *Ben': function() {
+      responsiveVoice.speak("Ben is the fucking shit");
     }
   };
+
+
 
   // Add our commands to annyang
   annyang.addCommands(commands);
