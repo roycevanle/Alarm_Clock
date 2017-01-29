@@ -11,10 +11,18 @@ if (annyang) {
     }};
 
   var commands2 = {
-    'love': function() {
+    'love me': function() {
       alert("Senpai Noticed You");
     }};
 
+  var commands2 = {
+    'love': function() {
+      alert("Senpai Noticed You");
+    }, 
+    'set alarm for 1800': function() {
+      alert("Your alarm for 18:00 was set");
+    }
+  };
 
   // Add our commands to annyang
   annyang.addCommands(commands);
