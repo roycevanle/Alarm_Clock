@@ -21,6 +21,9 @@ if (annyang) {
     }, 
     'set alarm for 1800': function() {
       alert("Your alarm for 18:00 was set");
+    },
+    'set alarm for *time': function(time) {
+      alert("Alarm set for " + time);
     }
   };
 
