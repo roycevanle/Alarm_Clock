@@ -6,7 +6,9 @@ if (annyang) {
       alert("testing");
     }
   };
-  
+
+  annyang.innit(commands);
+
   // Add our commands to annyang
   annyang.addCommands(commands);
 
